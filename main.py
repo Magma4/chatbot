@@ -118,7 +118,116 @@ def admissions():
                     print("International students application forms cost USD$ 150")
                     break
 
+            elif sub_option == 3:
+                print("1. Eligible banks to purchase the forms from?")
+                print("2. The mobile shortcode to use to purchase the forms?")
+                print("3. Which post office can i pourchase the forms from?")
+                sub_sub_option = int(input("Please choose an option: "))
+
+                if sub_sub_option == 1:
+                    print("You can purchase the forms from any of these banks, GCB, Ecobank, Calbank.")
+                    break
+                elif sub_sub_option == 2:
+                    print("You can purchase the forms using the shortcode *447*160#")
+                    break
+                elif sub_sub_option == 3:
+                    print("Any post office in Ghana")
+                    break
+        
+        elif userInput == 2:
+            print("DATES")
+            print("1. When are application forms going to be released?")
+            print("2. When is the deadline for the current admissions cycle?")
+            print("3. When do we report to school?")
+            sub_option = int(input("Please choose an option: "))
+
+            if sub_option == 1:
+                print("Please visit https://www.knust.edu.gh/admissions/prospective/applying for more information")
+                break
+            elif sub_option == 2:
+                print("Please visit https://www.knust.edu.gh/admissions/prospective/applying for more information")
+                break
+            elif sub_option == 3:
+                print("Please visit https://www.knust.edu.gh/academics/provisional-2023-2024-academic-year for more information")
+
+        elif userInput == 3:
+            print("APPLICATIONS")
+            print("1. What is my current admission status?")
+            print("2. Stuck at Application Review Stage?")
+            sub_option = int(input("Please choose an option: "))
+
+            if sub_option == 1:
+                print("Please log in to the admissions portal and Select check Admission Status")
+                break
+            elif sub_option == 2:
+                print("Go through the application and ensure that all fields are properly filled")
+                break
+        
+        elif userInput == 4:
+            print("ADMITTED")
+            print("1. What do i do after gaining admission?")
+            sub_option = int(input("Please choose an option: "))
+
+            if sub_option == 1:
+                print("Please log in to the admissions portal, download and print your provisional admission and acceptance letter. Fill the acceptance letter and post it to the school.")
+                print("1. Are you a non-scholarship student?")
+                print("2. Are you a scholarship student?")
+                sub_sub_option = int(input("Please choose an option: "))
+
+                if sub_sub_option == 1:
+                    print("Check the fees schedule and make appropriate academic fees payment. then book and make payment for accommodation after.")
+                    break
+                elif sub_sub_option == 2:
+                    print("Contact your benefactor, then book and make payment for accommodation after.")
+                    break
         break
+
+def fees():
+    print("FEES AND PAYMENTS")
+
+def aim():
+    print("AIM APP AND STUDENT PORTAL")
+    print("1. Login Issues")
+    print("2. Course Registration")
+    print("3. Check Results")
+    print("4. Fees")
+
+    while True:
+        userInput = int(input("Please choose an option: "))
+        if userInput == 1:
+            print("1. Cannot Login?")
+            print("2. Do not have credentials?")
+            sub_option = int(input("Please choose an option: "))
+
+            if sub_option == 1:
+                print("Which account can't you login into?")
+                print("1. AIM App")
+                print("2. Student Portal")
+                sub_sub_option = int(input("Please choose an option: "))
+
+                if sub_sub_option == 1:
+                    print("Log in with your student email and Password. If your username is 'jdoe1', you are required to enter 'jdoe1@st.knust.edu.gh', with your password to be able to login.")
+                    break
+                elif sub_sub_option == 2:
+                    print("Use credentials given or Reset password using the link https://apps.knust.edu.gh/students")
+                    break
+            
+            elif sub_option == 2:
+                print("Reset your password from here https://apps.knust.edu.gh/students/Account/ForgotPassword")
+                print("Or")
+                print("Create a ticket at helpdesk.knust.edu.gh")
+                break
+
+        elif userInput == 2:
+            print("1. Unable to register your courses.")
+            sub_option = int(input("Please choose an option: "))
+
+            if sub_option == 1:
+                print("1. Have you paid your fees?")
+                print("2. Check deadline for course registration")
+                print("3. Have you contacted your exams officer?")
+                
+
 
 if __name__ == "__main__":
     greetings()
@@ -129,6 +238,11 @@ if __name__ == "__main__":
         if query == 1:
             admissions()
             break
+        elif query == 2:
+            fees()
+            break
+        elif query == 3:
+            aim()
                 
     
 
