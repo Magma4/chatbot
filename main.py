@@ -31,7 +31,7 @@ def services():
     print("4. Transcript")
     print("5. Virtual Classroom")
     print("6. Graduation")
-    print("7. ")
+    print("7. Request For Documents")
 
 # services()
 
@@ -71,7 +71,7 @@ def admissions():
                         break
 
                     elif sub_sub_sub_option == 2:
-                        print("Provide MOMO number and Transaction ID")
+                        print("Visit helpdesk.knust.edu.gh and create a ticket with your MOMO number and Transaction ID")
                         break
                     else:
                         print("Invalid option, please try again")
@@ -80,6 +80,44 @@ def admissions():
                 elif sub_sub_option == 2:
                     print("Please check MOMO balance and Try again")
                     break
+
+
+            elif sub_option == 2:
+                print("1. Cost for regular students forms?")
+                print("2. Cost for IDL application forms")
+                print("3. Cost for international applicants")
+                sub_sub_option = int(input("Please choose an option: "))
+
+                if sub_sub_option == 1:
+                    print("1. Is it for a undergraduate form?")
+                    print("2. Is it for a postgraduate form?")
+                    sub_sub_sub_option = int(input("Please choose an option: "))
+
+                    if sub_sub_sub_option == 1:
+                        print("Regular Undergraduate forms cost GHS 250")
+                        break
+
+                    elif sub_sub_sub_option == 2:
+                        print("Regular Postgraduate forms cost GHS 280")
+                        break
+
+                elif sub_sub_option == 2:
+                    print("1. Undergraduate(Diploma, Top-up, Bridging)")
+                    print("2. Postgraduate")
+                    sub_sub_sub_option = int(input("Please choose an option: "))
+
+                    if sub_sub_sub_option == 1:
+                        print("Undergraduate(Diploma, Top-up, Bridging) forms cost GHS 250")
+                        break
+
+                    elif sub_sub_sub_option == 2:
+                        print("Postgraduate forms cost GHS 280")
+                        break
+                
+                elif sub_sub_option == 3:
+                    print("International students application forms cost USD$ 150")
+                    break
+
         break
 
 if __name__ == "__main__":
