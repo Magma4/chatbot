@@ -225,7 +225,7 @@ def aim():
             if sub_option == 1:
                 print("1. Have you paid your fees?")
                 print("2. Check deadline for course registration")
-                print("3. Have you contacted your exams officer?")
+                print("3. Have you contacted your exams officer?") # This is the last commit i did, we have to sort out the flowchart.
                 
 
 
