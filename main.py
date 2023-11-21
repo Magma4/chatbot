@@ -226,8 +226,38 @@ def aim():
                 print("1. Have you paid your fees?")
                 print("2. Check deadline for course registration")
                 print("3. Have you contacted your exams officer?") # This is the last commit i did, we have to sort out the flowchart.
-                
 
+
+def transcript():
+    print("TRANSCRIPT")
+    print("1. Payment")
+    print("2. Edit Details")
+    print("3. Timeline for transcript")
+    print("4. Account Error")
+    print("5. Contact")
+    
+    while True:
+        user_input = int(input("Please choose an option: "))
+        if user_input == 1:
+            print("Have you tried making payment?")
+            print("1. Yes")
+            print("2. No")
+            sub_option = int(input("Please choose an option: "))
+
+            if sub_option == 1:
+                print("Mode of Payment")
+                print("1. Mobile Money Payment")
+                print("2. Card Payment")
+                sub_sub_option = int(input("Please choose an option: "))
+
+                if sub_sub_option == 1:
+                    print("Was your account debited/deducted?")
+                    print("1. Yes")
+                    print("2. No")
+                    sub_sub_sub_option = int(input("Please choose an option: "))
+
+                    if sub_sub_sub_option == 1:
+                        print()
 
 if __name__ == "__main__":
     greetings()
