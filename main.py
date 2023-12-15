@@ -257,7 +257,7 @@ def transcript():
                     sub_sub_sub_option = int(input("Please choose an option: "))
 
                     if sub_sub_sub_option == 1:
-                        print()
+                        print("")
 
 if __name__ == "__main__":
     greetings()
